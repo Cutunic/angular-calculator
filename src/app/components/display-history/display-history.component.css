@@ -1,0 +1,16 @@
+.display-history{
+    padding: 4px;
+    height: min-content;
+    min-height: 40px;
+    text-align: right;
+    justify-content: top;
+    overflow-wrap: break-word; 
+    color: green;
+    border: 1px solid green;
+}
+
+@media(max-width: 500px){
+    .display-history{
+        min-height: 20px;
+    }
+}

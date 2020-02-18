@@ -1,0 +1,19 @@
+.display{
+    width: 16.3rem;
+    min-height: 64px;
+    background-color: black;
+}
+.history{
+    max-width: 100%;
+    border: 1px solid black;
+}
+.temp{
+    border: 1px solid black;
+    
+}
+
+@media(min-width: 500px){
+    .display{
+        min-height: 80px;
+    }
+}

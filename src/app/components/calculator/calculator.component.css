@@ -1,0 +1,13 @@
+.calculator-container{
+    width: min-content;
+    margin: 0px auto;
+    padding: 4px;
+
+    border: 1px solid black;
+}
+.display{
+    border: 1px solid green;
+}
+.keypad{
+    
+}

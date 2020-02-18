@@ -1,0 +1,13 @@
+.display-temp{
+    padding: 0px 4px;
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+    justify-content: center;
+    color: green;
+    border: 1px solid white;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

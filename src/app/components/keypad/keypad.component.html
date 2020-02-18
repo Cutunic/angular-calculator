@@ -1,0 +1,5 @@
+<div class="keypad">
+    <div class="key" *ngFor="let key of keys"  [ngClass]="key.class">
+        <app-key [key]="key.value"></app-key>
+    </div>
+</div>

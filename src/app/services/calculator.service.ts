@@ -84,7 +84,7 @@ export class CalculatorService {
       console.log('delete');
 
     // ------------ SOLVE and HANDLE EQUATION ------------>>>> jebacina
-    } else if ((value==='=')&&(this.tempValue!='')&&(!this.signReg.test(value))){
+    } else if ((value==='=')&&(this.tempValue!='')&&(!this.signReg.test(value)&&(!(/^[+*\/-]$/).test(this.tempValue)))){
       this.setDot(false);
       this.setMinusAllowed(true);
 
@@ -108,14 +108,19 @@ export class CalculatorService {
     } else if ((value==='.')&&(!this.dotInTemp)&&(this.lastClicked != '=')){
         if (this.tempValue===''){
           this.addToTempValue('0.');
-          this.lastClicked = value;
-        } else if (/^[+*\/-]$/.test(this.tempValue)){
+        } else if (/^[+*\/]$/.test(this.tempValue)){
           this.applyTempValue(value);
           this.addToTempValue('0.');
-        }  else {
+        }  else if ((this.tempValue==='-')&&((/^[+*\/]$/).test(this.equation[this.equation.length-1])||(this.equation.length===0))){
+          this.addToTempValue('0.');
+        } else if ((this.tempValue==='-')) {
+          this.applyTempValue(value);
+          this.addToTempValue('0.');
+        } else {
           this.addToTempValue(value);
         }
 
+        this.lastClicked = value;
         this.setDot(true);
 
       // ------------ NUMBERS ------------->>>> SOLVED
@@ -180,7 +185,7 @@ export class CalculatorService {
         }
     } 
   }
-  
+
   setDot(value: boolean){
     this.dotInTemp = value;
   }

@@ -5,10 +5,17 @@
     text-align: right;
     justify-content: top;
     overflow-wrap: break-word; 
+
+    border-radius: 2px;
     color: green;
     border: 1px solid green;
+    background-color: rgb(20, 20, 20);
+
 }
 
+p {
+    font-family: "Pocket Calculator";
+}
 @media(max-width: 500px){
     .display-history{
         min-height: 20px;

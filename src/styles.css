@@ -1,3 +1,15 @@
+@import url(//db.onlinewebfonts.com/c/19de45a392ba014cc9f1596115291c86?family=Pocket+Calculator);
+
+@font-face {font-family: "Pocket Calculator"; 
+    src: url("//db.onlinewebfonts.com/t/19de45a392ba014cc9f1596115291c86.eot"); 
+    src:    url("//db.onlinewebfonts.com/t/19de45a392ba014cc9f1596115291c86.eot?#iefix") 
+            format("embedded-opentype"), 
+            url("//db.onlinewebfonts.com/t/19de45a392ba014cc9f1596115291c86.woff2") 
+            format("woff2"), url("//db.onlinewebfonts.com/t/19de45a392ba014cc9f1596115291c86.woff") 
+            format("woff"), url("//db.onlinewebfonts.com/t/19de45a392ba014cc9f1596115291c86.ttf") 
+            format("truetype"), url("//db.onlinewebfonts.com/t/19de45a392ba014cc9f1596115291c86.svg#Pocket Calculator") format("svg"); }
+
+
 *{
     box-sizing: border-box;
     margin: 0;

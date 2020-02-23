@@ -83,7 +83,7 @@ export class CalculatorService {
 
       console.log('delete');
 
-    // ------------ SOLVE and HANDLE EQUATION ------------>>>> jebacina
+    // ------------ SOLVE and HANDLE EQUATION ------------>>>> SOLVED
     } else if ((value==='=')&&(this.tempValue!='')&&(!this.signReg.test(value)&&(!(/^[+*\/-]$/).test(this.tempValue)))){
       this.setDot(false);
       this.setMinusAllowed(true);

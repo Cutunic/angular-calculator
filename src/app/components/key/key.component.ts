@@ -1,4 +1,5 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CalculatorService } from '../../services/calculator.service';
 
 @Component({
   selector: 'app-key',
@@ -6,13 +7,14 @@ import { Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./key.component.css']
 })
 export class KeyComponent implements OnInit {
-
   @Input() key:string;
-  
-  constructor() { }
+
+  constructor(private calulatorService: CalculatorService) { }
 
   ngOnInit() {
-    console.log('in key :',this.key)
   }
 
+  onClick(){
+    this.calulatorService.keyClicked(this.key);
+  }
 }

@@ -13,8 +13,5 @@ export class KeypadComponent implements OnInit {
 
   ngOnInit() {
     this.keys = this.calculatorService.getKeys();
-    console.log('key  variable in keypad :',this.keys)
-
   }
-
 }

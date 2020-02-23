@@ -12,7 +12,9 @@
 .key{
     
 }
-
+.key:active{
+    background-color: black;
+}
 
 .number, .sign, .decimal{
     height: 4rem;

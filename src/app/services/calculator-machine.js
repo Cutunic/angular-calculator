@@ -1,5 +1,4 @@
-function calculatorMachine(){
-
+export function calculatorMachine(asd){
+    console.log( 'sretno : ', asd);
+    return ('pocetak');
 }
-
-export default calculatorMachine();
